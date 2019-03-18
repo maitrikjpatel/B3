@@ -11,6 +11,8 @@ import thumb03 from '../assets/images/thumbs/3.jpg'
 import thumb04 from '../assets/images/thumbs/4.jpg'
 import thumb05 from '../assets/images/thumbs/5.jpg'
 import thumb06 from '../assets/images/thumbs/6.jpg'
+import thumb07 from '../assets/images/thumbs/6.jpg'
+import thumb08 from '../assets/images/thumbs/6.jpg'
 
 import full01 from '../assets/images/fulls/1.jpg'
 import full02 from '../assets/images/fulls/2.jpg'
@@ -28,8 +30,8 @@ const DEFAULT_IMAGES = [
     { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
     { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
     { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '7', src: full07, thumbnail: thumb06, caption: 'Photo 7', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '8', src: full08, thumbnail: thumb06, caption: 'Photo 8', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '7', src: full07, thumbnail: thumb07, caption: 'Photo 7', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '8', src: full08, thumbnail: thumb08, caption: 'Photo 8', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
 
 class HomeIndex extends React.Component {
@@ -113,7 +115,7 @@ class HomeIndex extends React.Component {
                         }))} />
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="/" className="button">Full Portfolio</a></li>
                         </ul>
                     </section>
 
@@ -147,7 +149,7 @@ class HomeIndex extends React.Component {
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="/">hello@untitled.tld</a>
                                     </li>
                                 </ul>
                             </div>
