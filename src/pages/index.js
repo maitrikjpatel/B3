@@ -11,8 +11,8 @@ import thumb03 from '../assets/images/thumbs/3.jpg'
 import thumb04 from '../assets/images/thumbs/4.jpg'
 import thumb05 from '../assets/images/thumbs/5.jpg'
 import thumb06 from '../assets/images/thumbs/6.jpg'
-import thumb07 from '../assets/images/thumbs/6.jpg'
-import thumb08 from '../assets/images/thumbs/6.jpg'
+import thumb07 from '../assets/images/thumbs/7.jpg'
+import thumb08 from '../assets/images/thumbs/8.jpg'
 
 import full01 from '../assets/images/fulls/1.jpg'
 import full02 from '../assets/images/fulls/2.jpg'
@@ -81,8 +81,8 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "Bake Batter Butter"
+        const siteDescription = "Bake Custom Cake"
 
         return (
             <Layout>
@@ -93,16 +93,12 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
 
-                    {/* <section id="one">
+                    <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                            <h1>Bake Batter Butter</h1>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
-                    </section> */}
+                        <p>Bake Batter Butter custom cakes are world-famous for their beauty and quality. Every day we produce true works of “cake art” that create unforgettable memories catered specifically to your event. Our masterful cake designers can tackle virtually any request.</p>
+                    </section>
 
                     <section id="two">
                         <h2>Recent Work</h2>
@@ -113,15 +109,11 @@ class HomeIndex extends React.Component {
                             caption,
                             description
                         }))} />
-
-                        <ul className="actions">
-                            <li><a href="/" className="button">Full Portfolio</a></li>
-                        </ul>
                     </section>
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p>Contact To Start Your Custom Order</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="#">

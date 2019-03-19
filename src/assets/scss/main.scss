@@ -40,8 +40,8 @@
 		)
 	));
 
-	$size-header-width: 35%;
-	$size-header-pad: 4em;
+	$size-header-width: 30%;
+	$size-header-pad: 3em;
 
 /* Basic */
 
@@ -91,7 +91,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		color: #3d3d3d;
 		font-weight: _font(weight-bold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -537,14 +537,12 @@
 		}
 
 		&.avatar {
-			border-radius: 100%;
 
 			&:before {
 				display: none;
 			}
 
 			img {
-				border-radius: 100%;
 				width: 100%;
 			}
 		}
@@ -901,13 +899,8 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		_palette(accent2, bg);
-		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
-		background-position:	top left,							top left;
-		background-repeat:		repeat,								no-repeat;
-		background-size:		auto,								auto 100%;
-		color: _palette(accent2, fg);
+		background-color: #fafad2;
+		color: #012123;
 		height: 100%;
 		left: 0;
 		padding: ($size-header-pad * 2) $size-header-pad;
@@ -924,6 +917,7 @@
 		> .inner {
 			@include vendor('flex-grow', '1');
 			margin: 0 0 ($size-header-pad * 0.5) 0;
+			text-align: center;
 		}
 
 		strong, b {
@@ -935,7 +929,7 @@
 		}
 
 		h1 {
-			color: _palette(accent2, fg);
+			color: #3d3d3d;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -943,23 +937,30 @@
 
 		.image.avatar {
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 6.25em;
+			width: 15rem;
 		}
+		// &:before{
+		// 	position: absolute;
+		// 	content: "";
+		// 	border-bottom: 80px solid transparent;
+		// 	border-right: 100px solid lightgoldenrodyellow;
+		// }
 	}
 
 /* Footer */
 
 	#footer {
+		text-align: center;
 		.icons {
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 
 			a {
-				color: _palette(accent2, fg-light);
+				color: #3d3d3d;
 			}
 		}
 
 		.copyright {
-			color: _palette(accent2, fg-light);
+			color: #3d3d3d;
 			font-size: 0.8em;
 			list-style: none;
 			margin: (_size(element-margin) * 0.5) 0 0 0;
@@ -989,8 +990,8 @@
 
 	#main {
 		margin-left: $size-header-width;
-		max-width: 50em + $size-header-pad;
-		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+		max-width: 80%;
+		padding: ($size-header-pad * 2);
 		width: calc(100% - #{$size-header-width});
 
 		> section {
@@ -1196,7 +1197,7 @@
 
 	@include breakpoint(large) {
 
-		$size-header-width: 30%;
+		$size-header-width: 35%;
 		$size-header-pad: 3em;
 
 		/* Header */
