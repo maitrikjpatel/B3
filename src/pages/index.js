@@ -94,9 +94,9 @@ class HomeIndex extends React.Component {
                 <div id="main">
 
                     <section id="one">
-                        <header className="major">
+                        <div className="major">
                             <h1>Bake Batter Butter</h1>
-                        </header>
+                        </div>
                         <p>Bake Batter Butter custom cakes are world-famous for their beauty and quality. Every day we produce true works of “cake art” that create unforgettable memories catered specifically to your event. Our masterful cake designers can tackle virtually any request.</p>
                     </section>
 
