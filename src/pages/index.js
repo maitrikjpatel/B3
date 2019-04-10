@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
-import Gallery from '../components/Gallery'
+import Gallery from '../components/gallery'
 
 import thumb01 from '../assets/images/thumbs/1.jpg'
 import thumb02 from '../assets/images/thumbs/2.jpg'
