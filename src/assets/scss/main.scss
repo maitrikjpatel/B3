@@ -45,8 +45,10 @@
 /* Basic */
 
 	body {
-		background: _palette(bg);
-
+		// background: _palette(bg);
+		// background: #fff7f6;
+		background: #ffffff;
+		
 		&.is-loading {
 			*, *:before, *:after {
 				@include vendor('animation', 'none !important');
@@ -898,7 +900,7 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color: #fafad2;
+		background-color: #fff7f6;
 		color: #012123;
 		height: 100%;
 		left: 0;
