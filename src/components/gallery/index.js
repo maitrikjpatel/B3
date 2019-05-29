@@ -99,6 +99,7 @@ class Gallery extends Component {
 }
 
 Gallery.displayName = 'Gallery';
+
 Gallery.propTypes = {
     images: PropTypes.array
 };
