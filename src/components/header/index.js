@@ -1,7 +1,7 @@
 import React from 'react'
+import avatar from '../../assets/images/avatar.jpg'
 
-import Footer from './footer'
-import avatar from '../assets/images/avatar.jpg'
+import Footer from '../footer/index'
 
 class Header extends React.Component {
     render() {

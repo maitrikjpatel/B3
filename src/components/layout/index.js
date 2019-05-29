@@ -1,7 +1,7 @@
 import React from 'react'
-import '../assets/scss/main.scss'
+import '../../assets/scss/main.scss'
 
-import Header from './header'
+import Header from '../header/index'
 
 class Template extends React.Component {
     render() {

@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Layout from '../components/layout'
+import Layout from '../components/layout/index'
 // import Lightbox from 'react-images'
-import Gallery from '../components/gallery'
+import Gallery from '../components/gallery/index'
 
 import thumb01 from '../assets/images/thumbs/1.jpg'
 import thumb02 from '../assets/images/thumbs/2.jpg'
