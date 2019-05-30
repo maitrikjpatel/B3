@@ -2,30 +2,30 @@ import React from 'react'
 import Layout from '../components/layout'
 
 class ContactPate extends React.Component {
-    state = {
-      name: "",
-      email: "",
-      message: "",
-    }
+    // state = {
+    //   name: "",
+    //   email: "",
+    //   message: "",
+    // }
   
-    handleInputChange = event => {
-      const target = event.target
-      const value = target.value
-      const name = target.name
-      const email = target.email
-      const message = target.message
+    // handleInputChange = event => {
+    //   const target = event.target
+    //   const value = target.value
+    //   const name = target.name
+    //   const email = target.email
+    //   const message = target.message
   
-      this.setState({
-        [name]: value,
-        [email]: value,
-        [message]: value,
-      })
-    }
+    //   this.setState({
+    //     [name]: value,
+    //     [email]: value,
+    //     [message]: value,
+    //   })
+    // }
   
-    handleSubmit = event => {
-      event.preventDefault()
-      alert(`Welcome ${this.state.name} , ${this.state.email} and, ${this.state.message} !`)
-    }
+    // handleSubmit = event => {
+    //   event.preventDefault()
+    //   alert(`Welcome ${this.state.name} , ${this.state.email} and, ${this.state.message} !`)
+    // }
   
     render() {
       return (
@@ -49,7 +49,7 @@ class ContactPate extends React.Component {
                             name="contact"
                             method="post" 
                             action="#"
-                            onSubmit={this.handleSubmit} 
+                            // onSubmit={this.handleSubmit} 
                             netlify
                             data-netlify="true"
                             netlify-honeypot="bot-field"
