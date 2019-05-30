@@ -45,9 +45,7 @@
 /* Basic */
 
 	body {
-		// background: _palette(bg);
-		// background: #fff7f6;
-		background: #ffffff;
+		background: _palette(bg);
 		
 		&.is-loading {
 			*, *:before, *:after {
@@ -93,6 +91,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3d3d3d;
+		font-family:  _font(family-header);
 		font-weight: _font(weight-bold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -147,7 +146,7 @@
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px _palette(border);
+		border-bottom: solid 2px _palette(accent1, fg-border);
 
 		// This is the *only* instance where we need to rely on margin collapse.
 		margin: _size(element-margin) 0;
@@ -900,11 +899,12 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color: #fff7f6;
+		background-color: _palette(accent1,fg-lightest);
+		border-right: 1px solid  _palette(accent1,fg-border);
 		color: #012123;
 		height: 100%;
 		left: 0;
-		padding: ($size-header-pad * 2) $size-header-pad;
+		padding: $size-header-pad;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -919,6 +919,15 @@
 			@include vendor('flex-grow', '1');
 			margin: 0 0 ($size-header-pad * 0.5) 0;
 			text-align: center;
+			list-style-type:none;
+			a {
+				color: #3d3d3d;
+				font-size: 1.15em;
+				line-height: 3em;
+				margin: 0;
+				text-decoration: none;
+				border: none;
+			}
 		}
 
 		strong, b {
@@ -929,23 +938,10 @@
 			color: _palette(accent2, fg-bold);
 		}
 
-		h1 {
-			color: #3d3d3d;
-			font-size: 1.35em;
-			line-height: 1.75em;
-			margin: 0;
-		}
-
 		.image.avatar {
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
 			width: 15rem;
 		}
-		// &:before{
-		// 	position: absolute;
-		// 	content: "";
-		// 	border-bottom: 80px solid transparent;
-		// 	border-right: 100px solid lightgoldenrodyellow;
-		// }
 	}
 
 /* Footer */
@@ -961,25 +957,13 @@
 		}
 
 		.copyright {
-			color: #3d3d3d;
+			color: _palette(fg-light);
 			font-size: 0.8em;
 			list-style: none;
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 			padding: 0;
 
 			li {
-				border-left: solid 1px _palette(accent2, border);
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 0.75em;
-				padding-left: 0.75em;
-
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
 				a {
 					color: inherit;
 				}
@@ -996,7 +980,7 @@
 		width: calc(100% - #{$size-header-width});
 
 		> section {
-			border-top: solid 2px _palette(border);
+			border-top: solid 2px _palette(accent1, fg-border);
 			margin: $size-header-pad 0 0 0;
 			padding: $size-header-pad 0 0 0;
 
@@ -1204,7 +1188,7 @@
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+				padding: $size-header-pad;
 				width: $size-header-width;
 
 				h1 {

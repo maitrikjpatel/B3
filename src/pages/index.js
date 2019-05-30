@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout/index'
 import Gallery from '../components/gallery/index'
-import Images from '../assets/images/images'
+import Images from '../assets/images/creations/index'
 
 class HomeIndex extends React.Component {
 
