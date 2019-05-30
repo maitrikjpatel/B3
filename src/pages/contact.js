@@ -12,9 +12,13 @@ class ContactPate extends React.Component {
       const target = event.target
       const value = target.value
       const name = target.name
+      const email = target.email
+      const message = target.message
   
       this.setState({
         [name]: value,
+        [email]: value,
+        [message]: value,
       })
     }
   
@@ -41,43 +45,49 @@ class ContactPate extends React.Component {
                             </li>
                         </ul>
                         <hr/>
-                        <form onSubmit={this.handleSubmit} method="post" action="#">
-                            <p>Contact To Start Your Custom Order</p>
-                            <div className="row uniform 50%">
-                                <div className="6u 12u$(xsmall)">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        placeholder="Name"
-                                        value={this.state.name}
-                                        onChange={this.handleInputChange}
-                                    />
+                        <form 
+                            name="contact"
+                            method="post" 
+                            action="#"
+                            data-netlify="true"
+                            onSubmit={this.handleSubmit} 
+                            data-netlify-honeypot="bot-field">
+                                <p>Contact To Start Your Custom Order</p>
+                                <div className="row uniform 50%">
+                                    <div className="6u 12u$(xsmall)">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            placeholder="Name"
+                                            value={this.state.name}
+                                            onChange={this.handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="6u 12u$(xsmall)">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Email"
+                                            value={this.state.email}
+                                            onChange={this.handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="12u">
+                                        <textarea 
+                                            name="message" 
+                                            id="message" 
+                                            placeholder="Message" 
+                                            value={this.state.message}
+                                            onChange={this.handleInputChange}
+                                            rows="4">
+                                        </textarea>
+                                    </div>
+                                    <ul className="actions">
+                                        <li><input type="submit" value="Send Message" /></li>
+                                    </ul>
                                 </div>
-                                <div className="6u 12u$(xsmall)">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Email"
-                                        value={this.state.email}
-                                        onChange={this.handleInputChange}
-                                    />
-                                </div>
-                                <div className="12u">
-                                    <textarea 
-                                        name="message" 
-                                        id="message" 
-                                        placeholder="Message" 
-                                        value={this.state.message}
-                                        onChange={this.handleInputChange}
-                                        rows="4">
-                                    </textarea>
-                                </div>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div>
                         </form>
                     </div>
                 </div>
