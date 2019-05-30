@@ -49,8 +49,11 @@ class ContactPate extends React.Component {
                             name="contact"
                             method="post" 
                             action="#"
-                            data-netlify="true"
                             onSubmit={this.handleSubmit} 
+                            netlify
+                            data-netlify="true"
+                            netlify-honeypot="bot-field"
+                            data-netlify-recaptcha="true"
                             data-netlify-honeypot="bot-field">
                                 <p>Contact To Start Your Custom Order</p>
                                 <div className="row uniform 50%">
