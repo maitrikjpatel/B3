@@ -63,8 +63,8 @@ class ContactPate extends React.Component {
                                             name="name"
                                             id="name"
                                             placeholder="Name"
-                                            value={this.state.name}
-                                            onChange={this.handleInputChange}
+                                            // value={this.state.name}
+                                            // onChange={this.handleInputChange}
                                         />
                                     </div>
                                     <div className="6u 12u$(xsmall)">
@@ -73,8 +73,8 @@ class ContactPate extends React.Component {
                                             name="email"
                                             id="email"
                                             placeholder="Email"
-                                            value={this.state.email}
-                                            onChange={this.handleInputChange}
+                                            // value={this.state.email}
+                                            // onChange={this.handleInputChange}
                                         />
                                     </div>
                                     <div className="12u">
@@ -82,8 +82,8 @@ class ContactPate extends React.Component {
                                             name="message" 
                                             id="message" 
                                             placeholder="Message" 
-                                            value={this.state.message}
-                                            onChange={this.handleInputChange}
+                                            // value={this.state.message}
+                                            // onChange={this.handleInputChange}
                                             rows="4">
                                         </textarea>
                                     </div>
