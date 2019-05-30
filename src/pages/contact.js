@@ -88,7 +88,7 @@ class ContactPate extends React.Component {
                                         </textarea>
                                     </div>
                                     <ul className="actions">
-                                        <li><input type="submit" value="Send Message" /></li>
+                                        <li><button type="submit">Send Request</button></li>
                                     </ul>
                                 </div>
                         </form>
