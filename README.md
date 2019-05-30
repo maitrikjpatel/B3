@@ -2,10 +2,14 @@
 
 ## ToDo
 - Update Images to Auto Import Images
-- Update Form
+
+- Form
+  - Hookup form to something
+  - Add confetti button somewhere
+  - "Your cake is baking !" on Submit
+
+- Favicon
 - Add make random cake somewhere
-- Add confetti button somewhere
-- "Your cake is baking !" on Submit
 
 ## Done 
 - Update Colors : DONE
