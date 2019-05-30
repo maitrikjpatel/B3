@@ -13,16 +13,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Comfortaa`,
+            family: `Montserrat`,
             variants: ['300', '400', '500', '600', '700']
           },
           {
-            family: `Coming Soon`,
-            variants: ['400']
-          },
-          {
-            family: `Amatic SC`,
-            variants: ['400', '700']
+            family: `Work Sans`,
+            variants: ['300', '400', '500', '600', '700']
           }
         ],
       },
