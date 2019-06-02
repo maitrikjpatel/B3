@@ -67,8 +67,8 @@ class Gallery extends Component {
                         <img alt="thumb of cake" src={obj.thumbnail} />
                     </a>
 
-                    <h3>{obj.caption}</h3>
-                    <p>{obj.description}</p>
+                    {/* <h3>{obj.caption}</h3> */}
+                    {/* <p>{obj.description}</p> */}
                 </article>
             );
         });

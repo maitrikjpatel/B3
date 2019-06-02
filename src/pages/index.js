@@ -70,8 +70,6 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="two">
-                        <h2>Recent Work</h2>
-
                         <Gallery images={Images.map(({ id, src, thumbnail, caption, description }) => ({
                             src,
                             thumbnail,

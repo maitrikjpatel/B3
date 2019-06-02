@@ -1,4 +1,3 @@
-
 import thumb01 from './thumbs/1.jpg'
 import thumb02 from './thumbs/2.jpg'
 import thumb03 from './thumbs/3.jpg'
