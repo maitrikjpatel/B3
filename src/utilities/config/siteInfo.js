@@ -9,8 +9,8 @@ module.exports = {
   siteUrl: 'https://bakebatterbutter.com', // Domain of your site. No trailing slash!
   siteName: 'Bake Batter Butter', // Name of Developer
   siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: './src/assets/Images/b3logo.png', // Used for SEO and manifest
-  siteImage: './src/Assets/Images/siteImage.png', // Used for SEO and manifest
+  siteLogo: './src/assets/images/b3logo.png', // Used for SEO and manifest
+  siteImage: './src/assets/images/siteImage.png', // Used for SEO and manifest
 
   // Manifest and Progress color
   manifestShortName: "Bake Batter Butter",

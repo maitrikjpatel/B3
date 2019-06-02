@@ -1,11 +1,7 @@
 # BakeBatterButter
 
 ## ToDo
-- Favicon
-- Analytics
-- FullStory
 - SVG Image
-- SEO
 
 ## Done 
 - Update Images to Auto Import Images 
@@ -15,3 +11,8 @@
   - Hookup form to something
   - Add confetti button somewhere
   - "Your cake is baking !" on Submit
+- Favicon
+- Analytics
+- FullStory
+
+- SEO
