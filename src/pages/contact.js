@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import * as typeformEmbed from '@typeform/embed'
 
 class ContactPate extends React.Component {
     // state = {
@@ -26,6 +27,20 @@ class ContactPate extends React.Component {
     //   event.preventDefault()
     //   alert(`Welcome ${this.state.name} , ${this.state.email} and, ${this.state.message} !`)
     // }
+
+    constructor(props) {
+        super(props);
+        this.el = null;
+    }
+    componentDidMount() {
+        if (this.el) {
+            typeformEmbed.makeWidget(this.el, "https://shreya500481.typeform.com/to/DNbLPl", {
+            hideFooter: true,
+            hideHeaders: true,
+            opacity: 0
+            });
+        }
+    }
   
     render() {
       return (
@@ -45,7 +60,9 @@ class ContactPate extends React.Component {
                             </li>
                         </ul>
                         <hr/>
-                        <form 
+                        <p>Fill out following form to start your custom order</p>
+                        <div ref={(el) => this.el = el} style={{width: '100%', height: '500px'}} />
+                        {/* <form 
                             name="contact"
                             method="post" 
                             data-netlify="true"
@@ -88,7 +105,7 @@ class ContactPate extends React.Component {
                                         <li><button className="button" type="submit">Send Request</button></li>
                                     </ul>
                                 </div>
-                        </form>
+                        </form> */}
                     </div>
                 </div>
             </div>
