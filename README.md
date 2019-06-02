@@ -1,7 +1,6 @@
 # BakeBatterButter
 
 ## ToDo
-- Update Images to Auto Import Images
 - Favicon
 - Analytics
 - FullStory
@@ -9,6 +8,7 @@
 - SEO
 
 ## Done 
+- Update Images to Auto Import Images 
 - Update Colors : DONE
 - Update About Page : DONE
 - Form
