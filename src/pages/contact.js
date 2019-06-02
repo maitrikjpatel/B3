@@ -61,7 +61,7 @@ class ContactPate extends React.Component {
                         </ul>
                         <hr/>
                         <h3>Fill out form to start your custom order</h3>
-                        <p>Give few seconds for forms to <load className=""></load></p>
+                        <p>Give few seconds for forms to load.</p>
                         <div 
                             style={{border: "1px solid #ffe3df", width: '100%', height: '500px'}} 
                             ref={(el) => this.el = el} 
