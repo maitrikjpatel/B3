@@ -3,7 +3,31 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout/index'
 import Gallery from '../components/gallery/index'
-import Images from '../assets/images/creations/index'
+
+import thumb16 from '../assets/images/creations/thumbs/Thumb16.jpg'
+import thumb23 from '../assets/images/creations/thumbs/Thumb23.jpg'
+import thumb26 from '../assets/images/creations/thumbs/Thumb26.jpg'
+import thumb38 from '../assets/images/creations/thumbs/Thumb38.jpg'
+import thumb42 from '../assets/images/creations/thumbs/Thumb42.jpg'
+import thumb55 from '../assets/images/creations/thumbs/Thumb55.jpg'
+
+import full16 from '../assets/images/creations/fulls/Full16.jpg'
+import full23 from '../assets/images/creations/fulls/Full23.jpg'
+import full26 from '../assets/images/creations/fulls/Full26.jpg'
+import full38 from '../assets/images/creations/fulls/Full38.jpg'
+import full42 from '../assets/images/creations/fulls/Full42.jpg'
+import full55 from '../assets/images/creations/fulls/Full55.jpg'
+
+const DEFAULT_IMAGES = [
+    { id: '16', src: full16, thumbnail: thumb16, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '23', src: full23, thumbnail: thumb23, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '42', src: full42, thumbnail: thumb42, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '55', src: full55, thumbnail: thumb55, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '26', src: full26, thumbnail: thumb26, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '38', src: full38, thumbnail: thumb38, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    
+];
+
 
 class HomeIndex extends React.Component {
 
@@ -70,7 +94,7 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="two">
-                        <Gallery images={Images.map(({ id, src, thumbnail, caption, description }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
                             src,
                             thumbnail,
                             caption,

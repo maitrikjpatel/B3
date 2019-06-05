@@ -5,6 +5,7 @@ class Footer extends React.Component {
         return (
             <div id="footer">
                 <div className="inner">
+                    <p>Follow us @</p>
                     <ul className="icons">
                         <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bakebatterbutter/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
                         <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/bakebatterbutter" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
